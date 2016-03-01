@@ -3,6 +3,7 @@ Header = React.createClass({
 		return (
 			<div>
 				<span className="navbar-react">
+					<img src="img/logo.png" alt="Cosecha Logo"/>
 					<h1>Cosecha</h1>
 				</span>
 				<div className="collapse navbar-collapse">

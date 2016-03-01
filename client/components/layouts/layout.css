@@ -1,0 +1,8 @@
+.navbar-react{
+	background: #ccc;
+}
+
+.navbar-react > img, .navbar-react > h1 {
+	float:left;
+	display: inline-block;
+}

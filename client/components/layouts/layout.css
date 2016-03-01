@@ -3,6 +3,9 @@
 	padding: 2px 10px;
 }
 
+.icon-bar{
+	color: #fff;
+}
 .img-center{
 	margin: 0px auto;
 }
@@ -47,3 +50,15 @@
 }
 
 .valuelist { line-height: 40px }
+
+#sidebar-left{
+	float:left;
+}
+
+#sidebar-right, #sidebar-left{
+	margin-top: 10px;
+}
+
+#sidebar-right{
+	float:right;
+}

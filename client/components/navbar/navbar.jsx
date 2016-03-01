@@ -6,13 +6,13 @@ Navbar = React.createClass({
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-xs-4">
-								Sidebar Left
+								<ButtonSideBarLeft />
 							</div>
 							<div className="col-xs-4">
 								<img src="img/logo.png" className="img-responsive img-center" alt="Cosecha"/>
 							</div>
 							<div className="col-xs-4">
-								Sidebar Right
+								<ButtonSideBarRight />
 							</div>
 						</div>
 					</div>

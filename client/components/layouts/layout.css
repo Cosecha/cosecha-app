@@ -3,6 +3,10 @@
 	padding: 2px 10px;
 }
 
+.fa-chevron-down{
+	color: #fff;
+}
+
 .icon-bar{
 	color: #fff;
 }
@@ -72,4 +76,46 @@
 
 #right-bar h2, #left-bar h2{
 	color: #fff;
+}
+
+.center-logo{
+	width: 115px;
+	height: 75px;
+	position: relative;
+	margin: 0px auto;
+	padding: 0px 10px;
+	border-radius: 5px;
+	background: #352B31;
+	border: none;
+}
+
+.center-logo:hover{
+	background: #52434c;
+}
+
+.center-logo:focus, .center-logo:checked{
+	background: #352B31;
+}
+
+.center-logo:active{
+	color: #352B31;
+	background: #f5dd99;
+}
+
+.center-logo > img, .center-logo > i{
+	float: left;
+	display: inline;
+}
+
+.center-logo > i{
+	margin-top: 30px;
+}
+
+#profile-menu, #profile-menu a{
+	color: #fff;
+}
+
+#profile-menu{
+	max-width: 200px;
+	margin: 0px auto;
 }

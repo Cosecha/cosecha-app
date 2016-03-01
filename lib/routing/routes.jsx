@@ -23,11 +23,7 @@ publicRoutes.route('/', {
 privateRoutes.route('/dashboard', {
 	name: 'Dashboard',
 	action: function() {
-		ReactLayout.render(Layout, {
-			sidebar_left: <SidebarLeft/>,
-			sidebar_right: <SidebarRight/>,
-			content: <Main />
-		})
+		ReactLayout.render(Layout);
 	}
 });
 

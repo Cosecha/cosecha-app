@@ -68,14 +68,16 @@
 }
 
 #right-bar, #left-bar{
-	background: #333;
-	color: #fff;
+	background: #352B31;
+	background: #CEB365;
 	height: 100%;
 	min-height: 1000px;
 }
 
 #right-bar h2, #left-bar h2{
-	color: #fff;
+	color: #CEB365;
+	color: #352B31;;
+	padding: 0px 25px;
 }
 
 .center-logo{

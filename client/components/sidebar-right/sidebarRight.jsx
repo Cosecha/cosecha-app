@@ -1,7 +1,7 @@
 SidebarRight = React.createClass({
 	render(){
 		return (
-			<div id="right-bar">
+			<div id="right-bar" className="col-sm-3 hidden-xs">
 				<div className="container">
 					<div className="row">
 						<h2>DNA</h2>

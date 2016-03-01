@@ -5,16 +5,16 @@ Layout = React.createClass({
 				<Navbar/>
 				<div className="main-wrapper">
 					<div className="row">
-						<div className="col-sm-3 hidden-xs">
-							{this.props.sidebar_left}
+						<div>
+							<SidebarLeft klass="col-sm-3 hidden-xs"/>
 						</div>
 
 						<div className="col-sm-6 col-xs-12">
-							{this.props.content}
+							<Main />
 						</div>
 
-						<div className="col-sm-3 hidden-xs">
-							{this.props.sidebar_right}
+						<div>
+							<SidebarRight klass="col-sm-3 hidden-xs"/>
 						</div>
 					</div>
 				</div>

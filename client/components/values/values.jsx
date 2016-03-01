@@ -10,8 +10,9 @@ Values = React.createClass({
 				<li key={value.icon}>
 					<h3 className="btn btn-lg">
 						<i className={value.icon}></i>
+						<br/>
 						<span>
-							<strong> {value.bigtext}</strong>
+							<strong> {value.bigtext}</strong><br/>
 							<small> {value.littletext}</small>
 						</span>
 					</h3>
@@ -20,7 +21,7 @@ Values = React.createClass({
 		});
 		return (
 			<div>
-				<h2 className="col-md-11 valuelist hidden-xs">
+				<h2 className="col-md-12 valuelist hidden-xs">
 					Connect with organizers in the immigrant rights movement.
 				</h2>
 				<ul className="ds-btn hidden-xs">

@@ -1,9 +1,9 @@
 SidebarLeft = React.createClass({
 	render(){
 		return (
-			<div>
+			<div id="left-bar">
 				<div className="container">
-					<div className="row circles">
+					<div className="row">
 						<h2>Circles</h2>
 					</div>
 					<div className="row">

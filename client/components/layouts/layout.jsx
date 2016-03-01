@@ -3,7 +3,7 @@ Layout = React.createClass({
 		return (
 			<div>
 				<Navbar/>
-				<div className="container-fluid">
+				<div className="main-wrapper">
 					<div className="row">
 						<div className="col-sm-3 hidden-xs">
 							{this.props.sidebar_left}

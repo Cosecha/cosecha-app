@@ -1,8 +1,20 @@
-.navbar-react{
-	background: #ccc;
+.header{
+	background: #352B31;
+	padding: 2px 10px;
 }
 
 .navbar-react > img, .navbar-react > h1 {
 	float:left;
 	display: inline-block;
+}
+.navbar-react > h1{
+	color:#CEB365;
+}
+
+#signin{
+	margin-top: 20px;
+}
+
+#signin > .input-group{
+	margin-right: 10px;
 }

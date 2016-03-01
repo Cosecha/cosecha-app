@@ -1,11 +1,24 @@
 Layout = React.createClass({
 	render(){
 		return (
-			<div>	
+			<div>
 				<Navbar/>
-				{this.props.sidebar_left}
-				{this.props.content}
-				{this.props.sidebar_right}
+				<div className="container-fluid">
+					<div className="row">
+						<div className="col-sm-3 hidden-xs">
+							{this.props.sidebar_left}
+						</div>
+
+						<div className="col-sm-6 col-xs-12">
+							{this.props.content}
+						</div>
+
+						<div className="col-sm-3 hidden-xs">
+							{this.props.sidebar_right}
+						</div>
+					</div>
+				</div>
+
 			</div>
 		)
 	}

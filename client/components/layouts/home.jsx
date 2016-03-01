@@ -8,7 +8,7 @@ HomeLayout = React.createClass({
 				<div className="container">
 					<div className="row">
 						<div className="col-md-6">
-							Values
+							<Values/>
 						</div>
 
 						<div className="col-md-6">

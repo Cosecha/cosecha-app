@@ -24,8 +24,8 @@ privateRoutes.route('/dashboard', {
 	name: 'Dashboard',
 	action: function() {
 		ReactLayout.render(Layout, {
-			sidebar_left: 'Sidebar Left',
-			sidebar_right: 'Sidebar Right',
+			sidebar_left: <SidebarLeft/>,
+			sidebar_right: <SidebarRight/>,
 			content: 'Main Content'
 		})
 	}

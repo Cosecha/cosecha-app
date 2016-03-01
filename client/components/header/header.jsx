@@ -1,4 +1,39 @@
 Header = React.createClass({
+	mixins: [ReactMeteorData],
+	getMeteorData(){
+		let data = {};
+		data.currentUser = Meteor.user();
+		return data;
+	},
+	getInitialState(){
+		return {
+			message: '',
+			messageClass: 'hidden'
+		}
+	},
+	displayError(message){
+		this.setState({
+			message: message,
+			messageClass: 'alert alert-danger message'
+		});
+	},
+	handleSubmit(e){
+		e.preventDefault();
+		this.setState({message: '', messageClass: 'hidden'});
+
+		var that = this;
+		var email = ReactDOM.findDOMNode(this.refs.email).value.trim();
+		var password = ReactDOM.findDOMNode(this.refs.password).value.trim();
+
+		Meteor.loginWithPassword(email, password, function(e){
+			if(e) {
+				that.displayError(e.reason);
+			} else{
+				FlowRouter.go('/dashboard');
+			
+			}
+		});
+	},
 	render(){
 		return (
 			<div>
@@ -22,7 +57,7 @@ Header = React.createClass({
 								<input type="password" ref="password" placeholder="Password" className="form-control" />
 							</div>
 							<button className="btn btn-primary" type="submit">Login</button>
-							<span className=""></span>
+							<span className={this.state.messageClass}>{this.state.message}</span>
 						</form>
 					</div>
 				</div>

@@ -30,7 +30,7 @@ Header = React.createClass({
 				that.displayError(e.reason);
 			} else{
 				FlowRouter.go('/dashboard');
-			
+
 			}
 		});
 	},
@@ -43,7 +43,7 @@ Header = React.createClass({
 						<h1>Cosecha</h1>
 					</span>
 					<div className="collapse navbar-collapse">
-						<form id="signin" className="navbar-form navbar-right" role="form">
+						<form onSubmit={this.handleSubmit} id="signin" className="navbar-form navbar-right" role="form">
 							<div className="input-group">
 								<span className="input-group-addon">
 									<i className="fa fa-user"></i>

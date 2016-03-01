@@ -3,7 +3,7 @@ HomeLayout = React.createClass({
 		return (
 			<div>
 				<Header/>
-	
+
 				<div className="container">
 					<div className="row">
 						<div className="col-md-6">
@@ -11,7 +11,7 @@ HomeLayout = React.createClass({
 						</div>
 
 						<div className="col-md-6">
-							Signup
+							<Signupform/>
 						</div>
 					</div>
 				</div>

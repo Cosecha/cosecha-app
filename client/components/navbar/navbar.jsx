@@ -1,23 +1,14 @@
 Navbar = React.createClass({
-	mixins: [ReactMeteorData],
-	getMeteorData(){
-		let data = {};
-		data.currentUser = Meteor.user();
-		return data;
-	},
-	handleSignout(e){
-
-	},
 	render(){
 		return (
 			<div>
 				<div id="navbar">
 					<div className="container-fluid">
 						<div className="row">
-							<div className="col-xs-4 hidden-sm hidden-md hidden-lg">
+							<div className="col-xs-4 col-lg-4">
 								<ButtonSideBarLeft />
 							</div>
-							<div className="col-xs-4 col-sm-12">
+							<div className="col-xs-4 col-lg-4">
 								<p className="text-center">
 									<button type="button" className="btn btn-default center-logo" data-toggle="collapse" data-target="#profile-menu">
 										<img src="img/logo.png" className="img-responsive img-center" alt="Cosecha"/>
@@ -35,11 +26,8 @@ Navbar = React.createClass({
 									</nav>
 								</div>
 
-
-
-
 							</div>
-							<div className="col-xs-4 hidden-sm hidden-md hidden-lg">
+							<div className="col-xs-4 col-lg-4">
 								<ButtonSideBarRight />
 							</div>
 						</div>

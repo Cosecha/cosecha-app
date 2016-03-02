@@ -1,7 +1,13 @@
 SidebarRight = React.createClass({
+	mixins: [ReactMeteorData],
+	getMeteorData(){
+		let data = {};
+		data.myClasses = this.props.klass;
+		return data;
+	},
 	render(){
 		return (
-			<div id="right-bar" className="col-sm-3 hidden-xs">
+			<div id="right-bar" className={this.data.myClasses}>
 				<div className="container">
 					<div className="row">
 						<h2>DNA</h2>

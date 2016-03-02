@@ -74,6 +74,11 @@
 	min-height: 1000px;
 }
 
+#right-bar{
+	position:absolute;
+	right: 0px;
+}
+
 #right-bar h2, #left-bar h2{
 	color: #CEB365;
 	color: #352B31;;
@@ -120,4 +125,13 @@
 #profile-menu{
 	max-width: 200px;
 	margin: 0px auto;
+}
+
+.col-3{
+	position:absolute;
+}
+
+#main-content{
+	background: #e7e7e7;
+	min-height: 500px;
 }

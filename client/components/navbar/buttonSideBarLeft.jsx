@@ -1,8 +1,28 @@
 ButtonSideBarLeft = React.createClass({
+	mixins: [ReactMeteorData],
+	getMeteorData(){
+		let data = {};
+
+		return data;
+	},
+	getInitialState(){
+		return {
+			toggleState: false
+		};
+	},
+	toggleVisibility(){
+		if(this.state.toggleState){
+			Session.set('lsbClass', 'animated slideOutLeft col-xs-3 col-3');
+			this.data.toggle = !this.data.toggle;
+			this.state.toggleState = !this.state.toggleState;
+		}else{
+			Session.set('lsbClass', 'animated slideInLeft  col-xs-3 col-3');
+			this.state.toggleState = !this.state.toggleState;
+		}
+	},
 	handleClick(e){
 		e.preventDefault();
-		console.log('sidebar-left clicked!');
-		
+		this.toggleVisibility();
 	},
 	render(){
 		return (

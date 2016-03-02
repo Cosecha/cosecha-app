@@ -31,3 +31,5 @@ npm-container
 cfs:standard-packages
 cfs:filesystem
 momentjs:moment
+
+natestrauser:animate-css

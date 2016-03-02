@@ -57,13 +57,13 @@ Signupform = React.createClass({
 		return (
 			<div className="row">
 				<div className="signup">
-					<h1>Join Cosecha</h1>
-					<p className="text-muted">
-						Create your account and get started.
+					<h1 className="text-center">Create Your Account</h1>
+					<p className="text-muted text-center">
+						to get started.
 					</p>
 				</div>
 				<form onSubmit={this.handleSubmit}>
-					<div className="col-sm-9">
+					<div className="col-sm-12">
 						<div className="row">
 							<div className="col-sm-6 form-group">
 								<input className="form-control" name="user_name" type="text" ref="user_name" placeholder="Username" />

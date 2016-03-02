@@ -14,12 +14,13 @@ Statusform = React.createClass({
 	var title = this.refs.title.value;
 	var imageid = this.refs.imageid.value;
 	var imageurl = '';
-	if(imageid){
+	if(imageid.length > 0){
 		var image = Images.findOne({_id:imageid});
 		if(image){
 			imageurl = image.url();
 		}
-
+	}else{
+		throw 'No file selected!';
 	}
 	Meteor.call('Posts.insert', title, imageid, imageurl, function(err){
 		if(err){
@@ -35,7 +36,12 @@ Statusform = React.createClass({
 		var that = this;
 		FS.Utility.eachFile(e, function(file){
 			Images.insert(file,function(err,fileObj){
-				that.setState({imageurl: '/cfs/files/images/' + fileObj._id + '/' + fileObj.data.blob.name ,filename:fileObj.data.blob.name });
+				if(err){
+					console.log(err);
+				}else{
+					that.setState({imageurl: '/cfs/files/images/' + fileObj._id + '/' + fileObj.data.blob.name ,filename:fileObj.data.blob.name });
+				}
+
 			});
 		});
 	},render(){

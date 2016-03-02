@@ -5,7 +5,7 @@ Navbar = React.createClass({
 		data.navClass = 'collapse';
 		return data;
 	},
-	
+
 	render(){
 		return (
 			<div>

@@ -40,7 +40,8 @@ Signupform = React.createClass({
 				friends: [],
 				circles: [],
 				villages: [],
-				regions: []
+				regions: [],
+				isAdmin: false
 			}
 		};
 

@@ -2,7 +2,10 @@ Main = React.createClass({
 	render(){
 		return (
 			<div id="main">
-				Main Feed
+				
+				<Post/>
+				<Post/>
+				<Post/>
 			</div>
 		)
 	}

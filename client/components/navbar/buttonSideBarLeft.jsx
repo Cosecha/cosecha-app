@@ -12,11 +12,11 @@ ButtonSideBarLeft = React.createClass({
 	},
 	toggleVisibility(){
 		if(this.state.toggleState){
-			Session.set('lsbClass', 'animated slideOutLeft col-xs-3 col-3');
+			Session.set('lsbClass', 'animated slideOutLeft col-xs-6 col-3 col-md-3');
 			this.data.toggle = !this.data.toggle;
 			this.state.toggleState = !this.state.toggleState;
 		}else{
-			Session.set('lsbClass', 'animated slideInLeft  col-xs-3 col-3');
+			Session.set('lsbClass', 'animated slideInLeft  col-xs-6 col-3 col-md-3');
 			this.state.toggleState = !this.state.toggleState;
 		}
 	},

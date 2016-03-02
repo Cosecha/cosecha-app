@@ -1,12 +1,21 @@
 Meteor.methods({
-	'Posts.insert': function(message, imageurl){
+	'Posts.insert': function(title, imageurl){
+		var actionPhrase = '';
+		if(imageurl.length < 1){
+			actionPhrase = 'wrote a post';
+		}else{
+			actionPhrase = 'posted a picture';
+		}
+
 		var post = {
 			user: Meteor.user(),
 			createdAt: new Date(),
 			imageurl: imageurl,
-			message: message,
+			title: title,
 			likes: [],
-			comments: []
+			comments: [],
+			action: actionPhrase,
+			actionurl: '#'
 		};
 		Posts.insert(post);
 	},

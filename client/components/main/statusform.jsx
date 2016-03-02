@@ -52,7 +52,7 @@ Statusform = React.createClass({
 								<textarea placeholder="What do you want to share?" className="form-control input-lg" ref="title" id="title">
 
 								</textarea>
-								<h3>{this.state.filename||''}</h3>
+								<p>{this.state.filename||''}</p>
 							</div>
 							<div className="panel-footer">
 								<ul className="pull-left list-inline">

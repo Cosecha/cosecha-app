@@ -10,16 +10,16 @@ SidebarLeft = React.createClass({
 			<div id="left-bar" className={this.data.myClasses}>
 				<div className="container">
 					<div className="row">
-						<h2>Circles</h2>
+						<h3><a href="/circle">Circle</a></h3>
 					</div>
 					<div className="row">
-						<h2>Village</h2>
+						<h3><a href="/village">Village</a></h3>
 					</div>
 					<div className="row">
-						<h2>Region</h2>
+						<h3><a href="/region">Region</a></h3>
 					</div>
 					<div className="row">
-						<h2>Movement</h2>
+						<h3><a href="/movement">Movement</a></h3>
 					</div>
 				</div>
 			</div>

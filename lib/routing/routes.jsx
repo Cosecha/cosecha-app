@@ -5,6 +5,8 @@ publicRoutes = FlowRouter.group({
 privateRoutes = FlowRouter.group({
 	name: 'privateRoutes',
 	triggersEnter: [function(context,redirect){
+		Session.set('lsbClass', 'animated slideOutLeft col-xs-5 col-3 col-md-3');
+		Session.set('rsbClass', 'animated slideOutRight col-xs-5 col-3 col-md-3');
 		if(!Meteor.userId()){
 			return FlowRouter.go('/');
 		}
@@ -46,6 +48,86 @@ privateRoutes.route('/profile', {
 	action: function(){
 		ReactLayout.render(Layout, {
 			content: <Profile/>
+		})
+	}
+});
+
+// ======================================
+// ======================================
+//
+// Start all the main page routes
+//
+// ======================================
+// ======================================
+
+privateRoutes.route('/dna', {
+	name: 'DNA',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <DNA/>
+		})
+	}
+});
+
+privateRoutes.route('/wiki', {
+	name: 'Wiki',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Wiki/>
+		})
+	}
+});
+
+privateRoutes.route('/forum', {
+	name: 'Forum',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Forum/>
+		})
+	}
+});
+
+privateRoutes.route('/resources', {
+	name: 'Resources',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Resources/>
+		})
+	}
+});
+
+privateRoutes.route('/circle', {
+	name: 'Circle',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Circle/>
+		})
+	}
+});
+
+privateRoutes.route('/village', {
+	name: 'Village',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Village/>
+		})
+	}
+});
+
+privateRoutes.route('/region', {
+	name: 'Region',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Region/>
+		})
+	}
+});
+
+privateRoutes.route('/movement', {
+	name: 'Movement',
+	action: function(){
+		ReactLayout.render(Layout, {
+			content: <Movement/>
 		})
 	}
 });

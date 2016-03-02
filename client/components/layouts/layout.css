@@ -110,7 +110,7 @@
 #main{
 	z-index: 50;
 }
-#right-bar h2, #left-bar h2{
+#right-bar h3 a, #left-bar h3 a{
 	color: #CEB365;
 	color: #352B31;;
 	padding: 0px 10px;

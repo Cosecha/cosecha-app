@@ -10,16 +10,16 @@ SidebarRight = React.createClass({
 			<div id="right-bar" className={this.data.myClasses}>
 				<div className="container">
 					<div className="row">
-						<h2>DNA</h2>
+						<h3><a href="/dna">DNA</a></h3>
 					</div>
 					<div className="row">
-						<h2>Wiki</h2>
+						<h3><a href="/wiki">Wiki</a></h3>
 					</div>
 					<div className="row">
-						<h2>Forum</h2>
+						<h3><a href="/forum">Forum</a></h3>
 					</div>
 					<div className="row">
-						<h2>Resources</h2>
+						<h3><a href="/resources">Resources</a></h3>
 					</div>
 				</div>
 			</div>

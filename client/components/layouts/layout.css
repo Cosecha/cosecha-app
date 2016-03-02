@@ -54,7 +54,7 @@
 }
 
 
-.fa-2x { color: #356c84; }
+/*.fa-2x { color: #356c84; }*/
 .ds-btn li {
     list-style: none;
     float: left;
@@ -132,11 +132,11 @@
 }
 
 .center-logo{
-	width: 115px;
-	height: 75px;
+	width: 65px;
+	height: 45px;
 	position: relative;
 	margin: 0px auto;
-	padding: 0px 10px;
+	padding: 5px 10px 0px 10px;
 	border-radius: 5px;
 	background: #352B31;
 	border: none;
@@ -169,7 +169,7 @@
 }
 
 #profile-menu{
-	max-width: 200px;
+	max-width: 600px;
 	margin: 0px auto;
 }
 

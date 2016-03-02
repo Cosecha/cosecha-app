@@ -28,7 +28,7 @@ ButtonSideBarLeft = React.createClass({
 		return (
 			<div>
 				<button onClick={this.handleClick} id="sidebar-left" className="btn btn-primary">
-					<i className="fa fa-bars fa-3x"></i>
+					<i className="fa fa-bars"></i>
 				</button>
 			</div>
 		)

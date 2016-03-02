@@ -12,14 +12,14 @@ Navbar = React.createClass({
 				<div id="navbar">
 					<div className="container-fluid">
 						<div className="row">
-							<div className="col-xs-4 col-lg-4">
+							<div className="col-xs-4 col-sm-3 col-lg-2">
 								<ButtonSideBarLeft />
 							</div>
-							<div className="col-xs-4 col-lg-4">
+							<div className="col-xs-4 col-sm-6 col-lg-8">
 								<p className="text-center">
 									<button type="button" className="btn btn-default center-logo" data-toggle="collapse" data-target="#profile-menu">
 										<img src="img/logo.png" className="img-responsive img-center" alt="Cosecha"/>
-										<i className="fa fa-chevron-down"></i>
+
 									</button>
 								</p>
 
@@ -35,7 +35,7 @@ Navbar = React.createClass({
 								</div>
 
 							</div>
-							<div className="col-xs-4 col-lg-4">
+							<div className="col-xs-4 col-sm-3 col-lg-2">
 								<ButtonSideBarRight />
 							</div>
 						</div>

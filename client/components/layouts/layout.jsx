@@ -11,7 +11,7 @@ Layout = React.createClass({
 	},
 	render(){
 		return (
-			<div>
+			<div id="layout-body">
 
 				<Navbar/>
 

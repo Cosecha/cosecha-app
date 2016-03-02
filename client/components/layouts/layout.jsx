@@ -21,7 +21,7 @@ Layout = React.createClass({
 							<SidebarLeft klass={this.data.lsbClass}/>
 						</div>
 
-						<div className="col-sm-6 col-sm-offset-3 col-xs-12" id="main-content">
+						<div className="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3" id="main-content">
 							<Main />
 						</div>
 

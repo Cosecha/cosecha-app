@@ -12,11 +12,11 @@ ButtonSideBarRight = React.createClass({
 	},
 	toggleVisibility(){
 		if(this.state.toggleState){
-			Session.set('rsbClass', 'animated slideOutRight col-xs-6 col-3 col-md-3');
+			Session.set('rsbClass', 'animated slideOutRight col-xs-5 col-3 col-md-3');
 			this.data.toggle = !this.data.toggle;
 			this.state.toggleState = !this.state.toggleState;
 		}else{
-			Session.set('rsbClass', 'animated slideInRight  col-xs-6 col-3 col-md-3');
+			Session.set('rsbClass', 'animated slideInRight  col-xs-5 col-3 col-md-3');
 			this.state.toggleState = !this.state.toggleState;
 		}
 	},

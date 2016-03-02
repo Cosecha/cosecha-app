@@ -90,12 +90,13 @@
 #right-bar{
 	position:absolute;
 	right: 0px;
+
 }
 
 #left-bar{
 	position: absolute;
 	left: 0px;
-	z-index: 100;
+
 }
 
 #main{
@@ -154,6 +155,19 @@
 }
 
 #main-content{
-	background: #e7e7e7;
-	min-height: 500px;
+	padding-top: 20px;
+	background: rgb(251, 251, 251);
+}
+
+.filepicker {
+    display: inline-block;
+    width: 35px;
+    padding: 25px 0 0 0;
+    height: 25px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('../img/camera.png') center center no-repeat #e4e4e4;
+    background-size: 35px 25px;
 }

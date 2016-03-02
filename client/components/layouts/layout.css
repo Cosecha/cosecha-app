@@ -63,6 +63,19 @@
 	margin-top: 10px;
 }
 
+#sidebar-right, #sidebar-left{
+	background: #CEB365;
+	border: none;
+}
+
+#sidebar-right:hover, #sidebar-left:hover{
+	background: #b19441;
+}
+
+#sidebar-right:focus, #sidebar-left:focus, #sidebar-right:active, #sidebar-left:active{
+	outline: none!important;
+}
+
 #sidebar-right{
 	float:right;
 }

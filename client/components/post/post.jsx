@@ -5,7 +5,7 @@ Post = React.createClass({
 				<div className="panel panel-white panel-shadow">
 					<div className="post-heading">
 						<div className="pull-left image">
-							<img src="http://lorempixel.com/60/60/" className="img-circle img-responsive" />
+							<Avatar klass="img-circle avatar" user={this.props.post.user._id} />
 
 						</div>
 						<div className="pull-left meta">

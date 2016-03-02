@@ -42,7 +42,7 @@ Main = React.createClass({
 			}
 		];
 		let data = {};
-		data.posts = thePosts;
+		data.posts = Posts.find({}, {sort:{createdAt: -1}}).fetch();;
 		return data;
 	},
 	render(){

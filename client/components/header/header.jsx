@@ -37,28 +37,34 @@ Header = React.createClass({
 	render(){
 		return (
 			<div>
-				<div className="header">
-					<span className="navbar-react" id="header">
-						<img src="img/logo.png" alt="Cosecha Logo"/>
-						<h1>Cosecha</h1>
-					</span>
-					<div className="collapse navbar-collapse">
-						<form onSubmit={this.handleSubmit} id="signin" className="navbar-form navbar-right" role="form">
-							<div className="input-group">
-								<span className="input-group-addon">
-									<i className="fa fa-user"></i>
-								</span>
-								<input ref="email" type="text" placeholder="Email Address" id="email" className="form-control" />
+				<div id="header-wrapper" className="header">
+					<div className="container-fluid">
+						<div className="row">
+							<div className="col-md-4 col-sm-12">
+								<div className="navbar-react" id="header">
+									<img src="img/logo.png" alt="Cosecha Logo"/>
+									<h1>Cosecha</h1>
+								</div>
 							</div>
-							<div className="input-group">
-								<span className="input-group-addon">
-									<i className="fa fa-lock"></i>
-								</span>
-								<input type="password" ref="password" placeholder="Password" className="form-control" />
+							<div className="col-md-8 col-sm-12">
+								<form onSubmit={this.handleSubmit} id="signin" className="navbar-form navbar-right" role="form">
+									<div className="input-group">
+										<span className="input-group-addon">
+											<i className="fa fa-user"></i>
+										</span>
+										<input ref="email" type="text" placeholder="Email Address" id="email" className="form-control" />
+									</div>
+									<div className="input-group">
+										<span className="input-group-addon">
+											<i className="fa fa-lock"></i>
+										</span>
+										<input type="password" ref="password" placeholder="Password" className="form-control" />
+									</div>
+									<button className="btn btn-primary" type="submit">Login</button>
+									<span className={this.state.messageClass}>{this.state.message}</span>
+								</form>
 							</div>
-							<button className="btn btn-primary" type="submit">Login</button>
-							<span className={this.state.messageClass}>{this.state.message}</span>
-						</form>
+						</div>
 					</div>
 				</div>
 

@@ -3,6 +3,14 @@
 	padding: 2px 10px;
 }
 
+#header-wrapper{
+	background: #352B31;
+}
+
+#header{
+	min-height: 80px; 
+}
+
 .fa-chevron-down{
 	color: #fff;
 }

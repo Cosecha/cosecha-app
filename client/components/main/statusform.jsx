@@ -12,19 +12,25 @@ Statusform = React.createClass({
 	submitForm(e){
 		e.preventDefault();
 	var title = this.refs.title.value;
+
 	var imageid = this.refs.imageid.value;
+
 	var imageurl = '';
-	if(imageid.length > 0){
-		var image = Images.findOne({_id:imageid});
-		if(image){
-			imageurl = image.url();
-		}
-	}else{
-		throw 'No file selected!';
+	var image = Images.findOne({_id:imageid});
+	if(image){
+		imageurl = image.url();
 	}
+
+	if(!title && imageurl.length == 0){
+		bootbox.alert('Please include a message or a picture');
+		throw 'No way';
+	}
+
 	Meteor.call('Posts.insert', title, imageid, imageurl, function(err){
 		if(err){
+			bootbox.alert(err);
 			console.log(err);
+			throw 'Something went wrong in the server';
 		}
 	});
 	this.setState({image:'', filename:''});

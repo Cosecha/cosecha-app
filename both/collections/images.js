@@ -12,9 +12,8 @@ Images = new FS.Collection('images', {
     },
   	onInvalid: function (message) {
       if (Meteor.isClient) {
-        alert(message + '\n\nPlease upload only PNG or JPG files.');
-      } else {
-        console.log(message);
+				bootbox.alert(message + '<p>Please upload only PNG or JPG files.</p>');
+				Session.set('fileError', 'error');
       }
     }
   }

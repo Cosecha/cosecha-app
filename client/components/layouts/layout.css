@@ -90,13 +90,13 @@
 #right-bar{
 	position:absolute;
 	right: 0px;
-
+	z-index: 100;
 }
 
 #left-bar{
 	position: absolute;
 	left: 0px;
-
+	z-index: 100;
 }
 
 #main{

@@ -1,4 +1,11 @@
 Navbar = React.createClass({
+	mixins: [ReactMeteorData],
+	getMeteorData(){
+		var data = {};
+		data.navClass = 'collapse';
+		return data;
+	},
+	
 	render(){
 		return (
 			<div>
@@ -16,10 +23,11 @@ Navbar = React.createClass({
 									</button>
 								</p>
 
-								<div className="collapse" id="profile-menu">
+								<div className={this.data.navClass} id="profile-menu">
 									<nav className=" navbar-collapse nav-justified" aria-expanded="false">
 										<ul className="nav navbar-nav">
-											<li><a href="/profile">Edit Profile</a></li>
+											<li><a href="/dashboard">Dashboard</a></li>
+											<li><a href="/profile">Profile</a></li>
 											<li><a href="/signout">Signout</a></li>
 
 										</ul>

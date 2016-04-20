@@ -4,7 +4,30 @@
 
 This is so far an experiment at creating an online tool the [Cosecha Movement](http://movimientocosecha.com/). This site uses [Meteor](https://www.meteor.com/) with [React](https://facebook.github.io/react/) as the templating framework.
 
+---
+## Project Specs
 
+This is a list of how we plan to build this thing.
+
+### Framework: Meteor.js
+
+This is chosen because of its:
+- Ease of use
+- Easy to learn
+- Javascript in frontend and backend
+- It connects MongoDB and creates a local live-reloadable server for you
+
+### Templating: React
+
+Over time, this may change to React Native, but for now, we will be using React and using Cordova to make it accessible via a Android and iOS apps.
+
+### Hosting
+
+Need to make a decision when deployment time comes. For now there are two main options:
+1. Digital Ocean
+2. Modulus.io
+
+---
 ## Timeline
 
 This will really depend on if any people would like to join in the effort, but as of now the goal is to come out with a BETA release (something that is ready to be used) by June 17, 2016.

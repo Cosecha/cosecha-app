@@ -1,3 +1,5 @@
+var T = i18n.createComponent();
+
 Statusform = React.createClass({
 	getInitialState(){
 		return {
@@ -51,11 +53,14 @@ Statusform = React.createClass({
 			});
 		});
 	},render(){
+
+
 		return (
 			<div className="panel panel-default">
 				<div className="panel-content">
 					<div className="panel-heading">
-						Update Status
+						<T>updateStatus</T>
+
 					</div>
 					<form onSubmit={this.submitForm} className="form center-block">
 						<input type="hidden" ref="imageid" value={this.state.imageurl}/>
